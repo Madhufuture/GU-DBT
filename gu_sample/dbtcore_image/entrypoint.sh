@@ -1,2 +1,0 @@
-dbt debug
-dbt run

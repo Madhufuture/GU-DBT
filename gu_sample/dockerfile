@@ -47,17 +47,13 @@ RUN python -m pip install --upgrade pip setuptools wheel --no-cache-dir
 WORKDIR /usr/app/dbt/
 VOLUME /usr/app
 
-COPY ./*.sh /
 COPY profiles.yml /root/.dbt/profiles.yml
 
 COPY . /usr/app/dbt/
 
-ENV PYTHONUNBUFFERED=1
+CMD [ "dbt", "run" ]
 
-RUN chmod 700 /entrypoint.sh
-
-
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["dbt"]
 
 ##
 # dbt-core
