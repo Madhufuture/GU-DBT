@@ -1,0 +1,224 @@
+
+
+============================== 2022-11-29 00:20:35.564793 | 0693cf18-9199-4915-bc18-faf6a0f7e1ec ==============================
+[0m00:20:35.564793 [info ] [MainThread]: Running with dbt=1.3.0
+[0m00:20:35.565792 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\users\\msangaraju\\OneDrive - MOQdigital\\SourceCode\\GU-dbt\\gu_sample', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m00:20:35.566800 [debug] [MainThread]: Tracking: tracking
+[0m00:20:35.584791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022034448280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002203444A3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022034449F00>]}
+[0m00:20:36.115917 [debug] [MainThread]: Executing "git --help"
+[0m00:20:36.236921 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:20:36.238035 [debug] [MainThread]: STDERR: "b''"
+[0m00:20:36.248919 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+[0m00:20:36.249917 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:20:36.251919 [debug] [MainThread]: On debug: select 1 as id
+[0m00:20:36.253354 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:20:37.590542 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.34 seconds
+[0m00:20:37.591173 [debug] [MainThread]: On debug: Close
+[0m00:20:37.687576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022034EF0280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022034EF21D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022034EF2BC0>]}
+[0m00:20:37.687576 [debug] [MainThread]: Flushing usage events
+[0m00:20:38.752232 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-11-29 00:21:06.679443 | fe18fb29-fad7-4e73-8e04-4f886e81bc9c ==============================
+[0m00:21:06.679443 [info ] [MainThread]: Running with dbt=1.3.0
+[0m00:21:06.681013 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\users\\msangaraju\\OneDrive - MOQdigital\\SourceCode\\GU-dbt\\gu_sample', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m00:21:06.681446 [debug] [MainThread]: Tracking: tracking
+[0m00:21:06.683447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658370F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658370FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658371000>]}
+[0m00:21:06.714535 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m00:21:06.715535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658372080>]}
+[0m00:21:07.637342 [debug] [MainThread]: Parsing macros\adapters.sql
+[0m00:21:07.708340 [debug] [MainThread]: Parsing macros\apply_grants.sql
+[0m00:21:07.710311 [debug] [MainThread]: Parsing macros\catalog.sql
+[0m00:21:07.712828 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+[0m00:21:07.726342 [debug] [MainThread]: Parsing macros\materializations\merge.sql
+[0m00:21:07.731343 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+[0m00:21:07.738625 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+[0m00:21:07.740311 [debug] [MainThread]: Parsing macros\materializations\table.sql
+[0m00:21:07.747342 [debug] [MainThread]: Parsing macros\materializations\test.sql
+[0m00:21:07.749490 [debug] [MainThread]: Parsing macros\materializations\view.sql
+[0m00:21:07.751342 [debug] [MainThread]: Parsing macros\utils\array_construct.sql
+[0m00:21:07.752311 [debug] [MainThread]: Parsing macros\utils\bool_or.sql
+[0m00:21:07.753446 [debug] [MainThread]: Parsing macros\utils\escape_single_quotes.sql
+[0m00:21:07.754313 [debug] [MainThread]: Parsing macros\utils\right.sql
+[0m00:21:07.756312 [debug] [MainThread]: Parsing macros\utils\safe_cast.sql
+[0m00:21:07.757312 [debug] [MainThread]: Parsing macros\utils\timestamps.sql
+[0m00:21:07.759342 [debug] [MainThread]: Parsing macros\adapters\apply_grants.sql
+[0m00:21:07.781351 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+[0m00:21:07.795310 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+[0m00:21:07.798316 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+[0m00:21:07.802343 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+[0m00:21:07.811343 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+[0m00:21:07.821345 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+[0m00:21:07.843350 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+[0m00:21:07.847317 [debug] [MainThread]: Parsing macros\adapters\timestamps.sql
+[0m00:21:07.852334 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+[0m00:21:07.863316 [debug] [MainThread]: Parsing macros\etc\statement.sql
+[0m00:21:07.869344 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+[0m00:21:07.871341 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+[0m00:21:07.873342 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+[0m00:21:07.874311 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+[0m00:21:07.876316 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+[0m00:21:07.878352 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+[0m00:21:07.880310 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+[0m00:21:07.884310 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+[0m00:21:07.887341 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+[0m00:21:07.893313 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+[0m00:21:07.906316 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+[0m00:21:07.920311 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+[0m00:21:07.922311 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+[0m00:21:07.940316 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+[0m00:21:07.960342 [debug] [MainThread]: Parsing macros\materializations\models\incremental\strategies.sql
+[0m00:21:07.969313 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+[0m00:21:07.974311 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+[0m00:21:07.981345 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+[0m00:21:07.985390 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+[0m00:21:07.989311 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+[0m00:21:07.991310 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+[0m00:21:07.998311 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+[0m00:21:08.021547 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+[0m00:21:08.031381 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+[0m00:21:08.046696 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+[0m00:21:08.061343 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+[0m00:21:08.064376 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+[0m00:21:08.084374 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+[0m00:21:08.086375 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+[0m00:21:08.092382 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+[0m00:21:08.094345 [debug] [MainThread]: Parsing macros\python_model\python.sql
+[0m00:21:08.102342 [debug] [MainThread]: Parsing macros\utils\any_value.sql
+[0m00:21:08.104343 [debug] [MainThread]: Parsing macros\utils\array_append.sql
+[0m00:21:08.106373 [debug] [MainThread]: Parsing macros\utils\array_concat.sql
+[0m00:21:08.107374 [debug] [MainThread]: Parsing macros\utils\array_construct.sql
+[0m00:21:08.109481 [debug] [MainThread]: Parsing macros\utils\bool_or.sql
+[0m00:21:08.111345 [debug] [MainThread]: Parsing macros\utils\cast_bool_to_text.sql
+[0m00:21:08.113345 [debug] [MainThread]: Parsing macros\utils\concat.sql
+[0m00:21:08.116344 [debug] [MainThread]: Parsing macros\utils\data_types.sql
+[0m00:21:08.127348 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m00:21:08.130374 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m00:21:08.132606 [debug] [MainThread]: Parsing macros\utils\date_trunc.sql
+[0m00:21:08.134346 [debug] [MainThread]: Parsing macros\utils\escape_single_quotes.sql
+[0m00:21:08.137355 [debug] [MainThread]: Parsing macros\utils\except.sql
+[0m00:21:08.139597 [debug] [MainThread]: Parsing macros\utils\hash.sql
+[0m00:21:08.142344 [debug] [MainThread]: Parsing macros\utils\intersect.sql
+[0m00:21:08.143375 [debug] [MainThread]: Parsing macros\utils\last_day.sql
+[0m00:21:08.147348 [debug] [MainThread]: Parsing macros\utils\length.sql
+[0m00:21:08.149348 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m00:21:08.152509 [debug] [MainThread]: Parsing macros\utils\literal.sql
+[0m00:21:08.154374 [debug] [MainThread]: Parsing macros\utils\position.sql
+[0m00:21:08.156350 [debug] [MainThread]: Parsing macros\utils\replace.sql
+[0m00:21:08.158382 [debug] [MainThread]: Parsing macros\utils\right.sql
+[0m00:21:08.160344 [debug] [MainThread]: Parsing macros\utils\safe_cast.sql
+[0m00:21:08.161344 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m00:21:08.165343 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+[0m00:21:08.571568 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m00:21:08.589946 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m00:21:08.744545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658506920>]}
+[0m00:21:08.756545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226585068C0>]}
+[0m00:21:08.757548 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 303 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m00:21:08.758546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226584A9570>]}
+[0m00:21:08.762549 [info ] [MainThread]: 
+[0m00:21:08.764546 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m00:21:08.767570 [debug] [ThreadPool]: Acquiring new snowflake connection "list_raw"
+[0m00:21:08.796685 [debug] [ThreadPool]: Using snowflake connection "list_raw"
+[0m00:21:08.797546 [debug] [ThreadPool]: On list_raw: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "gu_sample", "target_name": "dev", "connection_name": "list_raw"} */
+show terse schemas in database raw
+    limit 10000
+[0m00:21:08.797546 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:21:09.780615 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.98 seconds
+[0m00:21:09.782618 [debug] [ThreadPool]: On list_raw: Close
+[0m00:21:09.881551 [debug] [ThreadPool]: Acquiring new snowflake connection "list_raw_MYSCHEMA"
+[0m00:21:09.891067 [debug] [ThreadPool]: Using snowflake connection "list_raw_MYSCHEMA"
+[0m00:21:09.891551 [debug] [ThreadPool]: On list_raw_MYSCHEMA: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "gu_sample", "target_name": "dev", "connection_name": "list_raw_MYSCHEMA"} */
+show terse objects in raw.MYSCHEMA
+[0m00:21:09.892602 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:21:10.314717 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.42 seconds
+[0m00:21:10.318787 [debug] [ThreadPool]: On list_raw_MYSCHEMA: Close
+[0m00:21:10.438803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226584CA380>]}
+[0m00:21:10.439717 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m00:21:10.441716 [info ] [MainThread]: 
+[0m00:21:10.549714 [debug] [Thread-1 (]: Began running node model.gu_sample.my_first_dbt_model
+[0m00:21:10.549714 [info ] [Thread-1 (]: 1 of 2 START sql table model MYSCHEMA.my_first_dbt_model ....................... [RUN]
+[0m00:21:10.552716 [debug] [Thread-1 (]: Acquiring new snowflake connection "model.gu_sample.my_first_dbt_model"
+[0m00:21:10.553717 [debug] [Thread-1 (]: Began compiling node model.gu_sample.my_first_dbt_model
+[0m00:21:10.554716 [debug] [Thread-1 (]: Compiling model.gu_sample.my_first_dbt_model
+[0m00:21:10.559730 [debug] [Thread-1 (]: Writing injected SQL for node "model.gu_sample.my_first_dbt_model"
+[0m00:21:10.565045 [debug] [Thread-1 (]: finished collecting timing info
+[0m00:21:10.565716 [debug] [Thread-1 (]: Began executing node model.gu_sample.my_first_dbt_model
+[0m00:21:10.634756 [debug] [Thread-1 (]: Writing runtime sql for node "model.gu_sample.my_first_dbt_model"
+[0m00:21:10.640715 [debug] [Thread-1 (]: Using snowflake connection "model.gu_sample.my_first_dbt_model"
+[0m00:21:10.641715 [debug] [Thread-1 (]: On model.gu_sample.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "gu_sample", "target_name": "dev", "node_id": "model.gu_sample.my_first_dbt_model"} */
+create or replace transient table raw.MYSCHEMA.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m00:21:10.642716 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:21:11.993048 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.35 seconds
+[0m00:21:12.026049 [debug] [Thread-1 (]: finished collecting timing info
+[0m00:21:12.026604 [debug] [Thread-1 (]: On model.gu_sample.my_first_dbt_model: Close
+[0m00:21:12.130941 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658815CC0>]}
+[0m00:21:12.131942 [info ] [Thread-1 (]: 1 of 2 OK created sql table model MYSCHEMA.my_first_dbt_model .................. [[32mSUCCESS 1[0m in 1.58s]
+[0m00:21:12.133944 [debug] [Thread-1 (]: Finished running node model.gu_sample.my_first_dbt_model
+[0m00:21:12.134942 [debug] [Thread-3 (]: Began running node model.gu_sample.my_second_dbt_model
+[0m00:21:12.135946 [info ] [Thread-3 (]: 2 of 2 START sql view model MYSCHEMA.my_second_dbt_model ....................... [RUN]
+[0m00:21:12.137947 [debug] [Thread-3 (]: Acquiring new snowflake connection "model.gu_sample.my_second_dbt_model"
+[0m00:21:12.138944 [debug] [Thread-3 (]: Began compiling node model.gu_sample.my_second_dbt_model
+[0m00:21:12.139960 [debug] [Thread-3 (]: Compiling model.gu_sample.my_second_dbt_model
+[0m00:21:12.145944 [debug] [Thread-3 (]: Writing injected SQL for node "model.gu_sample.my_second_dbt_model"
+[0m00:21:12.148059 [debug] [Thread-3 (]: finished collecting timing info
+[0m00:21:12.148943 [debug] [Thread-3 (]: Began executing node model.gu_sample.my_second_dbt_model
+[0m00:21:12.186431 [debug] [Thread-3 (]: Writing runtime sql for node "model.gu_sample.my_second_dbt_model"
+[0m00:21:12.189950 [debug] [Thread-3 (]: Using snowflake connection "model.gu_sample.my_second_dbt_model"
+[0m00:21:12.191340 [debug] [Thread-3 (]: On model.gu_sample.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "gu_sample", "target_name": "dev", "node_id": "model.gu_sample.my_second_dbt_model"} */
+create or replace  view raw.MYSCHEMA.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from raw.MYSCHEMA.my_first_dbt_model
+where id = 1
+  );
+[0m00:21:12.191942 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:21:12.921418 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.73 seconds
+[0m00:21:12.924417 [debug] [Thread-3 (]: finished collecting timing info
+[0m00:21:12.925484 [debug] [Thread-3 (]: On model.gu_sample.my_second_dbt_model: Close
+[0m00:21:13.031422 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe18fb29-fad7-4e73-8e04-4f886e81bc9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226588558A0>]}
+[0m00:21:13.032420 [info ] [Thread-3 (]: 2 of 2 OK created sql view model MYSCHEMA.my_second_dbt_model .................. [[32mSUCCESS 1[0m in 0.89s]
+[0m00:21:13.037516 [debug] [Thread-3 (]: Finished running node model.gu_sample.my_second_dbt_model
+[0m00:21:13.045556 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m00:21:13.052507 [info ] [MainThread]: 
+[0m00:21:13.057512 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 4.29 seconds (4.29s).
+[0m00:21:13.060512 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:21:13.062449 [debug] [MainThread]: Connection 'list_raw' was properly closed.
+[0m00:21:13.063956 [debug] [MainThread]: Connection 'list_raw_MYSCHEMA' was properly closed.
+[0m00:21:13.063956 [debug] [MainThread]: Connection 'model.gu_sample.my_first_dbt_model' was properly closed.
+[0m00:21:13.064953 [debug] [MainThread]: Connection 'model.gu_sample.my_second_dbt_model' was properly closed.
+[0m00:21:13.100190 [info ] [MainThread]: 
+[0m00:21:13.102200 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:21:13.114467 [info ] [MainThread]: 
+[0m00:21:13.117500 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m00:21:13.121466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265881D5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658724E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022658854940>]}
+[0m00:21:13.124476 [debug] [MainThread]: Flushing usage events
